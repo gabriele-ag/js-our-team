@@ -75,16 +75,18 @@ const mailUser = document.querySelector(`#mail`)
 const imageUser = document.querySelector(`#image`)
 const btn = document.querySelector(`.btn`)
 
-btn.addEventListener(`submit`, function (event) {
+btn.addEventListener(`click`, function (event) {
     event.preventDefault()
 
     const nuovoUtente = {
-        name: nameUser.input,
-        role: roleUser.input,
-        mail: mailUser.input,
-        image: imageUser.input
+        name: nameUser.value,
+        role: roleUser.value,
+        email: mailUser.value,
+        img: imageUser.value
     }
-    
+
+    cardElement.innerHTML += getElementMember(nuovoUtente);
+
 }) 
 
 
