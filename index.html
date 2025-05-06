@@ -14,10 +14,38 @@
 
 
     <main>
-        <div>
-            <div id="card-container" class="container row">
-            
+        <div class="container">
+            <div id="card-container" class="row justify-content-between g-3 mb-5">
+                
             </div>
+            
+            <h2 class="text-center mb-5">Entra a far parte del team!</h2>
+            
+            <form action="">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Inserisci il tuo nome</label>
+                    <input type="text" class="form-control" id="name" placeholder="Es: Mario Giangiollo">
+                </div>
+                
+                <div class="mb-3">
+                    <label for="role" class="form-label">Inserisci il tuo ruolo</label>
+                    <input type="text" class="form-control" id="role" placeholder="Es: Web Developer">
+                </div>
+
+                <div class="mb-3">
+                    <label for="mail" class="form-label">Inserisci la tua e-mail</label>
+                    <input type="email" class="form-control" id="mail" placeholder="Es: ginogiangiolloilgrande@">
+                </div>
+
+
+                <div class="mb-3">
+                    <label for="image" class="form-label">Scegli un'immagine</label>
+                    <input class="form-control" type="file" id="image"></input>
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-primary my-3">Conferma</button>
+                </div>
+            </form>
         </div>
     </main>
     
